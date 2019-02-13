@@ -35,6 +35,4 @@ The output will be
 Originial:    0.3
 
 BinaryResult: 01001100
-```# codeSamples
-# codeSamples
-# codeSamples
+```
