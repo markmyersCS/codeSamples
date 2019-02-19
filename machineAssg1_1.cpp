@@ -9,7 +9,7 @@ int main (int argc, char *argv[])
 	int base = 2;
 
 	//carryBit number before and during transformation
-	float carryBit = 0.0; 
+	double carryBit = 0.0; 
 
 	//transform arg into variable for carryBit
 	carryBit = atof(argv[1]); 
@@ -20,18 +20,22 @@ int main (int argc, char *argv[])
 	//int counter for whileloop
 	int i = 0;
 
-	if (carryBit > 1)
+	if (carryBit > 1){
+
 		cout<<"Make a valid entry.";
+	}
 
 
-	else
-	{
+	else{
 
-	//print original
-	cout<< "\nOriginial:    " << carryBit << endl;
+		//print original
+		cout<< "\nOriginial:    " << carryBit << endl;
 
-	//print binaryresult
-	cout<< "BinaryResult: ";
+		//print binaryresult
+		cout<< "BinaryResult: ";
+
+		//adds leading ones place and decimal
+		cout<< "0.";
 
 	while (i<8 && carryBit != 0)
 		{
@@ -44,14 +48,14 @@ int main (int argc, char *argv[])
 			binaryResult = (int) carryBit;
 
 			//carrybit is binary result subtracted from transformed carryBit to float
-			carryBit = ((float) carryBit ) - binaryResult;
+			carryBit = ((double) carryBit ) - binaryResult;
 
 			//cerr << "\ncarryBit" << carryBit << endl;
-			cout<< binaryResult;
+			cout << binaryResult;
 		}
 
-	//lines for formatting
-	cout<<endl;
+		//lines for formatting
+		cout<<endl;
 
 	}//end of else statement
 

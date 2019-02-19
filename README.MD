@@ -34,5 +34,5 @@ The output will be
 ```
 Originial:    0.3
 
-BinaryResult: 01001100
+BinaryResult: 0.01001100
 ```
